@@ -1,5 +1,7 @@
 
-import random, os, time
+import random
+import os
+import time
 
 def print_hangman(guess_times):
     '''
