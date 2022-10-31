@@ -1,11 +1,14 @@
 from hangman import hangman_game
 
 if __name__=="__main__":
+    hangman_game()
     while True:
-        hangman_game()
-        another_game = input("Do you want to paly another game? (y to continue)")
-        if another_game.upper() == "Y":
-            continue
-        else:
+        another_game = input("Do you want to play another game? (y to continue)")
+        if another_game in ["Y", "y"]:
+            hangman_game()
+        elif another_game in ["N", "n"]:
             break
+        else:
+            print("The input should be y or n")
+
     
